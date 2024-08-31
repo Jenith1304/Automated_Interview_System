@@ -1,0 +1,141 @@
+/* CircleComponent.module.css */
+
+.circleContainer {
+  position: absolute;
+  top: -120px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1; /* Places circles behind other components */
+  width: 30vw; /* 30% of the viewport width */
+  height: 30vw; /* Maintain aspect ratio for circles */
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1 {
+  width: 50vw;
+  height: 50vw;
+  background: linear-gradient(to right, lightblue, #e0f7ff);
+}
+
+.circle2 {
+  width: 35vw;
+  height: 35vw;
+  background: linear-gradient(to right, #e0f7ff, #f2fcff);
+}
+
+.circle3 {
+  width: 25vw;
+  height: 25vw;
+  background: linear-gradient(to right, #f2fcff, #ffffff);
+}
+
+.dot {
+  width: 1vw;
+  height: 1vw;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg) translateX(25vw) rotate(0deg); /* Half of circle1's width (50vw / 2) */
+  }
+  100% {
+    transform: rotate(360deg) translateX(25vw) rotate(-360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg) translateX(17.5vw) rotate(0deg); /* Half of circle2's width (35vw / 2) */
+  }
+  100% {
+    transform: rotate(360deg) translateX(17.5vw) rotate(-360deg);
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+    transform: rotate(0deg) translateX(12.5vw) rotate(0deg); /* Half of circle3's width (25vw / 2) */
+  }
+  100% {
+    transform: rotate(360deg) translateX(12.5vw) rotate(-360deg);
+  }
+}
+
+.dot1 {
+  animation: rotate1 5s linear infinite;
+}
+
+.dot2 {
+  animation: rotate2 7s linear infinite;
+}
+
+.dot3 {
+  animation: rotate3 9s linear infinite;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .circleContainer {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .circle1 {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .circle2 {
+    width: 22.5vw;
+    height: 22.5vw;
+  }
+
+  .circle3 {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .dot {
+    width: 2vw;
+    height: 2vw;
+  }
+
+  @keyframes rotate1 {
+    0% {
+      transform: rotate(0deg) translateX(15vw) rotate(0deg); /* Updated for media query */
+    }
+    100% {
+      transform: rotate(360deg) translateX(15vw) rotate(-360deg);
+    }
+  }
+
+  @keyframes rotate2 {
+    0% {
+      transform: rotate(0deg) translateX(11.25vw) rotate(0deg); /* Updated for media query */
+    }
+    100% {
+      transform: rotate(360deg) translateX(11.25vw) rotate(-360deg);
+    }
+  }
+
+  @keyframes rotate3 {
+    0% {
+      transform: rotate(0deg) translateX(7.5vw) rotate(0deg); /* Updated for media query */
+    }
+    100% {
+      transform: rotate(360deg) translateX(7.5vw) rotate(-360deg);
+    }
+  }
+}
