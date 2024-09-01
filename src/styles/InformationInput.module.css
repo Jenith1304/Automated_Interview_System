@@ -1,0 +1,16 @@
+.infoInput {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 45%;
+
+}
+
+.infoInput input {
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F0F6FE;
+    padding: 10px;
+}

@@ -1,0 +1,18 @@
+.infoSelect {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 45%;
+}
+
+.select {
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F0F6FE;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    /* Adjust text color as needed */
+    outline: none;
+}

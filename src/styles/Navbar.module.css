@@ -1,36 +1,39 @@
-:root{
-    --loginbtn:#1967D2;
-    --loginbtnHover:black;
+:root {
+    --loginbtn: #1967D2;
+    --loginbtnHover: black;
 }
 
-.navContainer{
+.navContainer {
     position: fixed;
-    top:0;
-    width:75%;
-    /* background-color: black; */
+    top: 0;
+    width: 75%;
+    background-color: white;
     /* color: white; */
-    height:10%;
+    height: 10%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 10px 10px 5px  lightblue;
+    box-shadow: 10px 10px 5px lightblue;
+    z-index: 1000;
 }
-.navLogo
-{
-    width:15%;
+
+.navLogo {
+    width: 15%;
     height: 100%;
 }
-.navLogo div{
+
+.navLogo div {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.navList{
-    width:55%;
+
+.navList {
+    width: 55%;
     display: flex;
     /* background-color: blueviolet; */
     align-items: center;
@@ -38,14 +41,14 @@
     height: 100%;
 }
 
-.navList ul{
+.navList ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navList ul li
-{   display: flex;
+.navList ul li {
+    display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -53,32 +56,25 @@
     cursor: pointer;
 }
 
-.navList ul li:hover{
+.navList ul li:hover {
 
     color: var(--loginbtn);
 }
-.navLogin
-{
-    width:25%;
+
+.navLogin {
+    width: 25%;
     /* background-color: blue; */
     align-items: center;
     display: flex;
     justify-content: center;
-    height:100%;
-    
+    height: 100%;
+
 }
-.navLogin button{
-    /* padding:15px;*/
-    width: 110px;
-    height: 45px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: var(--loginbtn);
-    transition: 0.5s all ease
-}
-.navLogin button:hover{
-    background-color:var(--loginbtnHover);
+
+
+
+.navLogin button:hover {
+    background-color: var(--loginbtnHover);
     color: white;
     transition: 0.4s all ease;
 }

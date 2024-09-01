@@ -1,0 +1,127 @@
+.profileContainer {
+    height: 100%;
+    width: 70%;
+    /* background-color: aqua; */
+    z-index: 1;
+    position: relative;
+}
+
+.profileHeader {
+    width: 100%;
+    height: 15%;
+    /* background-color: red; */
+    text-align: center;
+    z-index: 1;
+
+}
+
+.profileHeader label {
+    margin-top: 2%;
+    font-size: 20px;
+    transition: 0.3s all ease;
+}
+
+.profileHomeLabel:hover {
+    color: var(--loginbtn);
+    transition: 0.3s all ease;
+}
+
+.profileMain {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    gap: 20px;
+    /* background-color: bisque; */
+    z-index: 1;
+
+}
+
+.profileLeft {
+    width: 20%;
+    height: 500px;
+    background-color: #F2F7FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightblue;
+    z-index: 1;
+    position: sticky;
+    /* Changed from relative to sticky */
+    top: 120px;
+    /* Adjust this value to where you want it to stick when scrolling */
+
+}
+
+.profilePic {
+    position: relative;
+    /* To enable absolute positioning for child elements */
+}
+
+.profilePic img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--loginbtn);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.editButton {
+    position: absolute;
+    bottom: 5px;
+    /* Position just above the bottom border */
+    left: 50%;
+    /* Center the button horizontally */
+    transform: translateX(-50%);
+    /* Adjust for button width to center */
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: var(--loginbtn);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Optional: Add hover effects */
+    transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+    background-color: black;
+}
+
+.profileOptions {
+    margin-top: 50px;
+    z-index: 1;
+
+}
+
+.profileOptions ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileOptions ul li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 10px;
+    font-size: 15px;
+}
+
+.profileOptions ul li:hover,
+.active {
+    background-color: white;
+    border-radius: 10px;
+    color: var(--loginbtn);
+    cursor: pointer;
+}
+
+.profileRight {
+    /* background-color: aqua; */
+    width: 70%;
+    z-index: 1;
+
+}

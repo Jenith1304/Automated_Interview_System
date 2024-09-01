@@ -7,9 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1; /* Places circles behind other components */
-  width: 30vw; /* 30% of the viewport width */
-  height: 30vw; /* Maintain aspect ratio for circles */
+  z-index: -1;
+  /* Places circles behind other components */
+  width: 30vw;
+  /* 30% of the viewport width */
+  height: 30vw;
+  /* Maintain aspect ratio for circles */
 }
 
 .circle {
@@ -48,8 +51,10 @@
 
 @keyframes rotate1 {
   0% {
-    transform: rotate(0deg) translateX(25vw) rotate(0deg); /* Half of circle1's width (50vw / 2) */
+    transform: rotate(0deg) translateX(25vw) rotate(0deg);
+    /* Half of circle1's width (50vw / 2) */
   }
+
   100% {
     transform: rotate(360deg) translateX(25vw) rotate(-360deg);
   }
@@ -57,8 +62,10 @@
 
 @keyframes rotate2 {
   0% {
-    transform: rotate(0deg) translateX(17.5vw) rotate(0deg); /* Half of circle2's width (35vw / 2) */
+    transform: rotate(0deg) translateX(17.5vw) rotate(0deg);
+    /* Half of circle2's width (35vw / 2) */
   }
+
   100% {
     transform: rotate(360deg) translateX(17.5vw) rotate(-360deg);
   }
@@ -66,8 +73,10 @@
 
 @keyframes rotate3 {
   0% {
-    transform: rotate(0deg) translateX(12.5vw) rotate(0deg); /* Half of circle3's width (25vw / 2) */
+    transform: rotate(0deg) translateX(12.5vw) rotate(0deg);
+    /* Half of circle3's width (25vw / 2) */
   }
+
   100% {
     transform: rotate(360deg) translateX(12.5vw) rotate(-360deg);
   }
@@ -114,8 +123,10 @@
 
   @keyframes rotate1 {
     0% {
-      transform: rotate(0deg) translateX(15vw) rotate(0deg); /* Updated for media query */
+      transform: rotate(0deg) translateX(15vw) rotate(0deg);
+      /* Updated for media query */
     }
+
     100% {
       transform: rotate(360deg) translateX(15vw) rotate(-360deg);
     }
@@ -123,8 +134,10 @@
 
   @keyframes rotate2 {
     0% {
-      transform: rotate(0deg) translateX(11.25vw) rotate(0deg); /* Updated for media query */
+      transform: rotate(0deg) translateX(11.25vw) rotate(0deg);
+      /* Updated for media query */
     }
+
     100% {
       transform: rotate(360deg) translateX(11.25vw) rotate(-360deg);
     }
@@ -132,8 +145,10 @@
 
   @keyframes rotate3 {
     0% {
-      transform: rotate(0deg) translateX(7.5vw) rotate(0deg); /* Updated for media query */
+      transform: rotate(0deg) translateX(7.5vw) rotate(0deg);
+      /* Updated for media query */
     }
+
     100% {
       transform: rotate(360deg) translateX(7.5vw) rotate(-360deg);
     }
