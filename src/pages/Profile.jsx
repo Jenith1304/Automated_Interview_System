@@ -27,8 +27,9 @@ const Profile = ({ interviewer }) => {
             <div className={styles.profileContainer}>
                 {/* header Section */}
                 <div className={styles.profileHeader}>
-                    <h2>Candidate Profile</h2>
-                    <label className={styles.profileHomeLabel}>Home </label> <label>-  Candidate Profile</label>
+                    {interviewer ? <h2>Interviewer Profile</h2> : <h2>Candidate Profile</h2>}
+                    <label className={styles.profileHomeLabel}>Home </label>
+                    {interviewer ? <label>-  Interviewer Profile</label> : <label>-  Candidate Profile</label>}
                 </div>
                 {/* profile main section */}
                 <div className={styles.profileMain}>
@@ -56,9 +57,9 @@ const Profile = ({ interviewer }) => {
                     </div>
                     {/* Right Section */}
                     <div className={styles.profileRight}>
-                        {/* <MyProfile interviewer={interviewer} /> */}
+                        <MyProfile interviewer={interviewer} />
                         {/* <ChangePassword /> */}
-                        <PostJobs />
+                        {/* <PostJobs /> */}
                     </div>
                 </div>
             </div>
