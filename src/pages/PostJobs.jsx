@@ -22,8 +22,8 @@ const PostJobs = () => {
             <hr />
             <div style={{ display: "flex", justifyContent: "center", gap: "55px", marginTop: "25px" }}>
                 <InformationInput label="Job Title" type="text" placeholder="Junior Scientist" />
-                <InformationSelect label="Select Skill" options={category} />
-                <InformationSelect label="Select Skill" options={type} />
+                <InformationSelect label="Select Category" options={category} />
+                <InformationSelect label="Select Type" options={type} />
                 {/* <InformationInput label="Qualification" type="text" placeholder="https:/Btech" /> */}
             </div>
             <div style={{ display: "flex", justifyContent: "center", gap: "55px", marginTop: "25px" }}>
