@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "../styles/Signup.module.css"
 import Button from '../components/Button'
+import { createUserWithEmail } from '../utilities/createUserWithEmail';
 const SignUp = () => {
+    // State
+    const [user, setUser] = useState({ userID: '', userName: '', email: '', password: '', confirmPassword: '' })
+
+
+    const handleUser = (target) => {
+        const { name, value } = target
+
+        setUser({ ...user, [name]: value })
+    }
+
+    const handleSignUp = async () => {
+        await createUserWithEmail(user)
+    }
     return (
         <div style={{
             display: "flex",
@@ -31,13 +45,28 @@ const SignUp = () => {
                     </div>
                     <div className={styles.signupDetails}>
                         <div className={styles.formSignup}>
-                            <input type="text" placeholder='Full Name*' />
-                            <input type="email" placeholder='Email*' />
-                            <input type="text" placeholder='Mobile*' />
-                            <input type="password" placeholder='Password*' />
-                            <input type="password" placeholder=' Confirm Password*' />
+                            {/* <input type="text" name="fullName" placeholder='Full Name*' /> */}
+                            <input type="email" placeholder='Email*' name="email" value={user.email}
+                                onChange={({ target }) => {
+                                    handleUser(target);
+                                }} />
+                            {/* <input type="text" placeholder='Mobile*' name="mobile" /> */}
+                            <input type="password" placeholder='Password*' name="password" value={user.password}
+                                onChange={({ target }) => {
+                                    handleUser(target);
+                                }} />
+                            <input type="password" placeholder=' Confirm Password*' name="confirmPassword" value={user.confirmPassword}
+                                onChange={({ target }) => {
+                                    handleUser(target);
+                                }} />
 
-                            <button>Log In</button>
+                            <button onClick={() => {
+                                if (user.password === user.confirmPassword)
+                                    handleSignUp();
+                                else
+                                    alert("Password does not match,Please try again.")
+                            }
+                            }>Sign Up</button>
                         </div>
                     </div>
 
