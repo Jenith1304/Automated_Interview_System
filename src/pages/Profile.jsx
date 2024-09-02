@@ -13,7 +13,10 @@ import ChangePassword from './ChangePassword';
 import InformationSelect from '../components/InformationSelect';
 import PostJobs from './PostJobs';
 
+import ManageJobs from './ManageJobs';
+
 const Profile = ({ interviewer }) => {
+
 
     return (
         <div style={{
@@ -60,7 +63,8 @@ const Profile = ({ interviewer }) => {
                     <div className={styles.profileRight}>
                         {/* <MyProfile interviewer={interviewer} /> */}
                         {/* <ChangePassword /> */}
-                        <PostJobs />
+                        {/* <PostJobs /> */}
+                        <ManageJobs />
                     </div>
                 </div>
             </div>
