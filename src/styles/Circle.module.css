@@ -99,6 +99,7 @@
   .circleContainer {
     width: 70vw;
     height: 70vw;
+    display: none;
   }
 
   .circle1 {
