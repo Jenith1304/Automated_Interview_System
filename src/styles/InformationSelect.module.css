@@ -3,6 +3,10 @@
     flex-direction: column;
     gap: 5px;
     width: 45%;
+
+    /* Default width for larger screens */
+    margin-bottom: 15px;
+    /* Add some space below for stacking */
 }
 
 .select {
@@ -13,6 +17,40 @@
     padding: 10px;
     font-size: 16px;
     color: #333;
-    /* Adjust text color as needed */
     outline: none;
+    width: 100%;
+    /* Make select responsive */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .infoSelect {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .select {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+        padding: 8px;
+        /* Adjust padding for smaller screens */
+        height: 50px;
+        /* Reduce height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .infoSelect {
+        width: 100%;
+        /* Full width on very small screens */
+    }
+
+    .select {
+        font-size: 12px;
+        /* Further reduce font size */
+        padding: 6px;
+        /* Further adjust padding */
+        height: 45px;
+        /* Further reduce height */
+    }
 }

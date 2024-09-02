@@ -100,3 +100,84 @@
     margin-top: 15px;
 
 }
+
+
+/* Existing styles here... */
+
+@media (max-width: 768px) {
+    .loginContainer {
+        width: 90%;
+        margin-top: 140px;
+        /* Adjust width for smaller screens */
+    }
+
+    .loginForm {
+        padding: 15px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .formLogin input {
+        height: 50px;
+        /* Adjust input height */
+        padding: 15px;
+        /* Adjust padding */
+    }
+
+    .formLogin button {
+        height: 50px;
+        /* Adjust button height */
+        font-size: 18px;
+        /* Adjust font size */
+    }
+
+    .loginWith {
+        height: auto;
+        /* Allow height to adjust based on content */
+        padding: 15px;
+        /* Add some padding */
+    }
+
+    .loginWith button {
+        width: 100%;
+        /* Make button take full width */
+        margin-top: 10px;
+        /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .loginContainer {
+        width: 95%;
+        margin-top: 140px;
+        /* Make container even narrower on very small screens */
+    }
+
+    .loginForm {
+        padding: 10px;
+        /* Further reduce padding */
+    }
+
+    .formLogin input {
+        height: 45px;
+        /* Adjust input height */
+        padding: 10px;
+        /* Adjust padding */
+    }
+
+    .formLogin button {
+        height: 45px;
+        /* Adjust button height */
+        font-size: 16px;
+        /* Adjust font size */
+    }
+
+    .loginWith {
+        padding: 10px;
+        /* Adjust padding */
+    }
+
+    .loginWith button {
+        width: 100%;
+        /* Full width button */
+    }
+}

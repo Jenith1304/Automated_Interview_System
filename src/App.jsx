@@ -16,9 +16,9 @@ function App() {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Navbar />
         <Circle />
-        {/* <Login /> */}
+        <Login />
         {/* <SignUp /> */}
-        <Profile interviewer={interviewer} />
+        {/* <Profile interviewer={interviewer} /> */}
       </div>
     </>
   )

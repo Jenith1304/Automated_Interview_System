@@ -1,10 +1,9 @@
 .infoInput {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: 45%;
-
+    /* Adjusts width on larger screens */
 }
 
 .infoInput input {
@@ -13,4 +12,42 @@
     border: none;
     background-color: #F0F6FE;
     padding: 10px;
+    width: 100%;
+    /* Ensures input takes the full width of its container */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .infoInput {
+        width: 90%;
+        /* Adjust width for tablet-sized screens */
+        margin: 0 auto;
+        /* Center the input fields on the page */
+    }
+
+    .infoInput input {
+        height: 50px;
+        /* Slightly smaller height on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .infoInput {
+        width: 100%;
+        /* Full width on mobile screens */
+        margin: 0 auto;
+        /* Center the input fields on the page */
+    }
+
+    .infoInput input {
+        height: 45px;
+        /* Smaller height for very small screens */
+        padding: 8px;
+        /* Reduced padding for compact appearance */
+    }
+
+    .infoInput label {
+        font-size: 14px;
+        /* Adjust label size for readability on small screens */
+    }
 }

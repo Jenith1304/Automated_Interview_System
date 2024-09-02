@@ -5,7 +5,6 @@
     border-radius: 10px;
     background-color: #F9FCFF;
     margin-bottom: 15px;
-
 }
 
 .myProfileSocials {
@@ -15,4 +14,49 @@
     border-radius: 10px;
     margin-bottom: 15px;
     background-color: #F9FCFF;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .myProfile,
+    .myProfileSocials {
+        padding: 30px;
+        margin: 10px 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .myProfile,
+    .myProfileSocials {
+        padding: 20px;
+        margin: 5px 5px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
 }

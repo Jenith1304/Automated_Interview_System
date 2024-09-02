@@ -20,8 +20,9 @@ const Profile = ({ interviewer }) => {
             display: "flex",
             justifyContent: "center",
             marginTop: "8%",
-            height: "150vh",
+            height: "auto",
             alignItems: "center",
+            flexDirection: "column"
         }}>
             {/* profileContainer */}
             <div className={styles.profileContainer}>
@@ -57,9 +58,9 @@ const Profile = ({ interviewer }) => {
                     </div>
                     {/* Right Section */}
                     <div className={styles.profileRight}>
-                        <MyProfile interviewer={interviewer} />
+                        {/* <MyProfile interviewer={interviewer} /> */}
                         {/* <ChangePassword /> */}
-                        {/* <PostJobs /> */}
+                        <PostJobs />
                     </div>
                 </div>
             </div>

@@ -4,7 +4,11 @@
     box-shadow: 10px 10px 5px lightblue;
     border-radius: 10px;
     background-color: #F9FCFF;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    max-width: 800px;
+    /* Limit maximum width for large screens */
+    margin: 0 auto;
+    /* Center the component */
 }
 
 .postJobtextarea {
@@ -19,4 +23,55 @@
     border: none;
     background-color: #F0F6FE;
     padding: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .postJob {
+        padding: 30px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .postJob h2 {
+        font-size: 20px;
+        /* Reduce font size for headings */
+    }
+
+    .postJob div {
+        flex-direction: column;
+        /* Stack inputs vertically */
+        gap: 20px;
+        /* Reduce gap between elements */
+        align-items: center;
+        /* Center align elements */
+    }
+
+    .postJob .InformationInput,
+    .postJobtextarea {
+        width: 100%;
+        /* Full width for input elements and textareas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .postJob {
+        padding: 20px;
+        /* Further reduce padding for very small screens */
+    }
+
+    .postJob h2 {
+        font-size: 18px;
+        /* Further reduce font size for headings */
+    }
+
+    .postJob div {
+        gap: 15px;
+        /* Reduce gap further on smaller screens */
+    }
+
+    .postJobtextarea textarea {
+        height: 100px;
+        width: 100%;
+        /* Adjust textarea height for smaller screens */
+    }
 }
