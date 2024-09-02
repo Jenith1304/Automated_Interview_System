@@ -1,0 +1,111 @@
+/* Main container styling */
+.manageJobs {
+    padding: 20px;
+    /* Adjusted padding for smaller screens */
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+    background-color: #F9FCFF;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Table container styling */
+.manageJobsTable {
+    overflow-x: auto;
+    /* Allows horizontal scrolling on small screens */
+}
+
+/* Table styling */
+.manageJobsTable table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Ensures borders are collapsed */
+}
+
+.manageJobsTable table th,
+.manageJobsTable table td {
+    padding: 15px;
+    border: 1px solid #DEE2E6;
+}
+
+.manageJobsTable table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+    .manageJobsTable table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        /* Horizontal scroll for small screens */
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scrolling for touch devices */
+    }
+
+    .manageJobsTable table thead {
+        display: none;
+        /* Hide table headers on small screens */
+    }
+
+    .manageJobsTable table tr {
+        display: block;
+        width: 400px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    .manageJobsTable table td {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #dee2e6;
+        padding-left: 50%;
+        /* Adjust padding to accommodate labels */
+    }
+
+    .manageJobsTable table td::before {
+        content: attr(data-label);
+        /* Responsive labels */
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding: 10px;
+        font-weight: bold;
+        background: #f4f4f4;
+        text-align: left;
+        top: 0;
+        bottom: 0;
+        border-right: 1px solid #dee2e6;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .manageJobsTable table td:last-child {
+        text-align: center;
+        /* Center action icons */
+    }
+}
+
+/* Responsive design for mobile screens (phones) */
+@media (max-width: 480px) {
+    .manageJobsTable table tr {
+        width: 300px;
+    }
+
+    .manageJobsTable table td {
+        font-size: 14px;
+        width: 100%;
+        /* Adjust font size for very small screens */
+    }
+
+    .manageJobsTable table td::before {
+        font-size: 12px;
+        /* Adjust label font size for very small screens */
+    }
+}
