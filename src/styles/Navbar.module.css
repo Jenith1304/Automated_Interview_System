@@ -52,13 +52,18 @@
     list-style: none;
 }
 
-.navList ul li {
+.navList ul li  {
     padding: 15px;
     cursor: pointer;
     transition: color 0.3s;
 }
-
-.navList ul li:hover {
+.link
+{
+    /* background-color: red; */
+    color: var(--loginbtnHover);
+    text-decoration: none;
+}
+.link:hover {
     color: var(--loginbtn);
 }
 

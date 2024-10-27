@@ -1,0 +1,45 @@
+.mainContainer{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+.mainLeft{
+    width: 50%;
+    text-align: left;
+    margin: 2rem;
+}
+.mainRight{
+    width: 50%;
+    text-align: right;
+    margin: 2rem;
+}
+.mainWorkingProcess{
+    width: 100%;
+}
+.mainWorkingProcessSteps{
+    display: flex;
+    justify-content: space-evenly;
+}
+.textColorWhite{
+    color: white;
+}
+.stepsContainer{
+    display:  flex;
+    height: 5rem;
+    width: fit-content;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+.step1Containerbg{
+    background-color: #3592e9;
+}
+.step2Containerbg{
+    background-color: #bc84ca;
+}
+.step3Containerbg{
+    background-color: #56d8b1;
+}
+.stepImage{
+    height: 4rem;
+}

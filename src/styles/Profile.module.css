@@ -119,7 +119,15 @@
     color: var(--loginbtn);
     cursor: pointer;
 }
-
+.link
+{
+    /* background-color: red; */
+    color: var(--loginbtnHover);
+    text-decoration: none;
+}
+.link:hover {
+    color: var(--loginbtn);
+}
 .profileRight {
     /* background-color: aqua; */
     width: 70%;

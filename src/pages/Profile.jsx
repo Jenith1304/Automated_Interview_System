@@ -12,6 +12,7 @@ import { MdOutlineUpload } from "react-icons/md";
 import ChangePassword from './ChangePassword';
 import InformationSelect from '../components/InformationSelect';
 import PostJobs from './PostJobs';
+import { Link, Outlet, Route, Routes  } from 'react-router-dom';
 
 import ManageJobs from './ManageJobs';
 
@@ -47,15 +48,15 @@ const Profile = ({ interviewer }) => {
                         <h5>Position</h5>
                         <div className={styles.profileOptions}>
                             <ul>
-                                <li ><MdDashboard />  Dashboard </li>
-                                <li className={styles.active}><CgProfile />   My Profile</li>
+                                <li ><MdDashboard /><Link to="" className={styles.link}>Dashboard</Link></li>
+                                <li className={styles.active}><CgProfile /><Link to="/profile/" className={styles.link}>MyProfile</Link></li>
                                 {interviewer ?
                                     <>
-                                        <li><MdOutlineUpload />  Post A Job</li>
-                                        <li><MdOutlineManageAccounts />  Manage Jobs</li>
+                                        <li><MdOutlineUpload />  <Link to="/profile/postjobs" className={styles.link}>Post a Job</Link> </li>
+                                        <li><MdOutlineManageAccounts /><Link to="/profile/managejobs" className={styles.link}>Manage Jobs</Link></li>
                                     </>
-                                    : <li><VscWorkspaceTrusted />   Applied Jobs</li>}
-                                <li><FaExchangeAlt />   Change Password</li>
+                                    : <li><VscWorkspaceTrusted /><Link to="" className={styles.link}>Applied Jobs</Link></li>}
+                                <li><FaExchangeAlt />  <Link to="/profile/changepassword" className={styles.link}>Change Password</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +65,15 @@ const Profile = ({ interviewer }) => {
                         {/* <MyProfile interviewer={interviewer} /> */}
                         {/* <ChangePassword /> */}
                         {/* <PostJobs /> */}
-                        <ManageJobs />
+                        {/* <ManageJobs /> */}
+                        {/* <Outlet/> */}
+                        <Routes>
+                        <Route path='changepassword' element={<ChangePassword/>}/>
+          <Route path='/profile/*' element={<Profile interviewer={interviewer}/>}/>
+          <Route path='/managejobs' element={<ManageJobs/>}/>
+          <Route path='/postjobs' element={<PostJobs/>}/>
+          <Route path='/' element={<MyProfile/>}/>
+                        </Routes>
                     </div>
                 </div>
             </div>
