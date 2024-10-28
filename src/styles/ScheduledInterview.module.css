@@ -1,0 +1,106 @@
+.interviewCards {
+    padding: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+    background-color: #F9FCFF;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cards {
+    border-radius: 10px;
+    background-color: aqua;
+    width: 100%;
+    max-width: 250px;
+    /* Adjusted for medium screens */
+    height: 350px;
+    flex: 1 1 250px;
+}
+
+.cardsTop {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    background-color: #F2F7FF;
+    height: 65%;
+    width: 100%;
+    transition: all ease 0.3s;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardsNumber {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+}
+
+.cardsNumber h1 {
+    font-size: 6vw;
+    /* Responsive font size */
+}
+
+.cardsTop:hover {
+    background-color: var(--loginbtn);
+    transition: all ease 0.4s;
+    color: #F9FCFF;
+    border-bottom: 1px solid #F2F7FF;
+    cursor: pointer;
+}
+
+.cardsTop:hover h3 {
+    font-size: 30px;
+}
+
+.cardsBottom {
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--loginbtn);
+    color: #F9FCFF;
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.link {
+    /* background-color: red; */
+    color: var(--loginbtnHover);
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards {
+        height: auto;
+        max-width: 100%;
+        /* Full width for smaller screens */
+    }
+
+    .cardsNumber h1 {
+        font-size: 18vw;
+        /* Larger text size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .cardsNumber h1 {
+        font-size: 18vw;
+        /* Further scaling down for very small screens */
+    }
+}
