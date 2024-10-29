@@ -17,6 +17,7 @@ import { Link, Outlet, Route, Routes } from 'react-router-dom';
 import ManageJobs from './ManageJobs';
 import ScheduledInterviews from './ScheduledInterviews';
 import Upcoming from './Upcoming';
+import InterviewCards from '../components/InterviewCards';
 
 const Profile = ({ interviewer }) => {
 
@@ -77,51 +78,7 @@ const Profile = ({ interviewer }) => {
                             <Route path='/scheduledinterview' element={<ScheduledInterviews />} />
                             <Route path='/' element={<MyProfile />} />
                         </Routes> */}
-                        <div className={styles.upcoming}>
-                            <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                <h2> Upcoming Interviews </h2>
-                                <div >
-                                    <InformationInput type="password" placeholder="Search" style={{ width: "300px" }} />
-                                </div>
-                            </div>
-                            <hr />
-
-                            <div className={styles.cardsContainer}>
-                                <div className={styles.cards}>
-                                    <div className={styles.cardsImage}>
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Ratan_Tata_photo.jpg" alt="Candidate Profile" />
-                                    </div>
-                                    <div>
-                                        <h1>Ratan Tata</h1>
-                                        <h3>Junior Scientist</h3>
-                                        <h3>23rd June,2024</h3>
-                                        <h3>13:00 a.m</h3>
-                                    </div>
-                                </div>
-                                <div className={styles.cards}>
-                                    <div className={styles.cardsImage}>
-                                        <img src="https://www.equitypandit.com/wp-content/uploads/2020/12/EP-Ratan-Tata.jpeg" alt="Candidate Profile" />
-                                    </div>
-                                    <div>
-                                        <h1>Ratan Tata</h1>
-                                        <h3>Junior Scientist</h3>
-                                        <h3>23rd June,2024</h3>
-                                        <h3>13:00 a.m</h3>
-                                    </div>
-                                </div>
-                                <div className={styles.cards}>
-                                    <div className={styles.cardsImage}>
-                                        <img src="https://www.equitypandit.com/wp-content/uploads/2020/12/EP-Ratan-Tata.jpeg" alt="Candidate Profile" />
-                                    </div>
-                                    <div>
-                                        <h1>Ratan Tata</h1>
-                                        <h3>Junior Scientist</h3>
-                                        <h3>23rd June,2024</h3>
-                                        <h3>13:00 a.m</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Upcoming />
                     </div>
                 </div>
             </div>
