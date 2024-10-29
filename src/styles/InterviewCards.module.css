@@ -1,0 +1,145 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cards {
+    padding: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+    background-color: #F9FCFF;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* Ensure content stays within the card */
+}
+
+.cards:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 15px 15px 15px rgba(173, 216, 230, 0.5);
+    border: 1px solid var(--loginbtn);
+}
+
+.cardsImage {
+    height: 200px;
+    /* Adjusted height */
+    width: 100%;
+    overflow: hidden;
+    /* Prevents overflow */
+}
+
+.cardsImage img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardsInfo {
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Allows for better layout control */
+}
+
+.cardsInfo h3 {
+    text-align: center;
+}
+
+.cardsInfo p {
+    text-align: center;
+    white-space: nowrap;
+    /* Prevents wrapping */
+    overflow: hidden;
+    /* Hides overflow */
+    text-overflow: ellipsis;
+    /* Adds ellipsis for overflowed text */
+}
+
+.cardsButton {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space between buttons */
+    gap: 5px;
+    /* Space between buttons */
+    margin-top: auto;
+    /* Push buttons to the bottom */
+    flex-wrap: nowrap;
+    /* Prevent wrapping to the next line */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards {
+        max-width: 200px;
+        /* Tablet size */
+    }
+
+    .cardsImage {
+        height: 180px;
+        /* Reduced height for tablet */
+    }
+
+    .cardsButton {
+        flex-direction: column;
+        /* Stack buttons on top of each other */
+        width: 100%;
+        /* Full width for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        max-width: 150px;
+        /* Mobile size */
+    }
+
+    .cardsImage {
+        height: 160px;
+        /* Reduced height for mobile */
+    }
+
+    .cardsInfo p {
+        font-size: 12px;
+        /* Smaller font size for mobile */
+    }
+
+    .cardsButton {
+        flex-direction: column;
+        /* Stack buttons on mobile */
+        width: 100%;
+        /* Full width for buttons */
+        align-items: stretch;
+        /* Stretch buttons to full width */
+    }
+}
+
+@media (max-width: 320px) {
+    .cards {
+        max-width: 120px;
+        /* Very small devices */
+    }
+
+    .cardsImage {
+        height: 140px;
+        /* Adjusted height */
+    }
+
+    .cardsInfo p {
+        font-size: 10px;
+        /* Even smaller font size */
+    }
+
+    .cardsButton {
+        width: 100%;
+        /* Full width for buttons */
+    }
+}
