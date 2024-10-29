@@ -1,6 +1,6 @@
 .btnActive {
     /* padding:15px;*/
-    width: 150px;
+    width: 100px;
     height: 45px;
     border: none;
     border-radius: 10px;
@@ -10,7 +10,7 @@
 }
 
 .btnInactive {
-    width: 110px;
+    width: 100px;
     height: 45px;
     border: none;
     border-radius: 10px;
