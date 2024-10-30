@@ -1,0 +1,15 @@
+.current {
+    padding: 20px;
+    /* Adjusted padding for smaller screens */
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+    background-color: #F9FCFF;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.currentHeader {
+    display: flex;
+    justify-content: space-between;
+}
