@@ -17,7 +17,10 @@ import { Link, Outlet, Route, Routes } from 'react-router-dom';
 import ManageJobs from './ManageJobs';
 import ScheduledInterviews from './ScheduledInterviews';
 import Upcoming from './Upcoming';
+import Current from './Current';
+
 import InterviewCards from '../components/InterviewCards';
+import ManualInterview from './ManualInterview';
 
 const Profile = ({ interviewer }) => {
 
@@ -29,20 +32,28 @@ const Profile = ({ interviewer }) => {
             marginTop: "8%",
             height: "auto",
             alignItems: "center",
-            flexDirection: "column"
+            flexDirection: "column",
+            padding: "20px"
         }}>
             {/* profileContainer */}
-            <div className={styles.profileContainer}>
-                {/* header Section */}
-                <div className={styles.profileHeader}>
+
+            {/* <div className={styles.profileContainer}> */}
+
+            {/* header Section */}
+
+            {/* <div className={styles.profileHeader}>
                     {interviewer ? <h2>Interviewer Profile</h2> : <h2>Candidate Profile</h2>}
                     <label className={styles.profileHomeLabel}>Home </label>
                     {interviewer ? <label>-  Interviewer Profile</label> : <label>-  Candidate Profile</label>}
-                </div>
-                {/* profile main section */}
-                <div className={styles.profileMain}>
-                    {/* Left Section */}
-                    <div className={styles.profileLeft}>
+                </div> */}
+
+            {/* profile main section */}
+
+            {/* <div className={styles.profileMain}> */}
+
+            {/* Left Section */}
+
+            {/* <div className={styles.profileLeft}>
                         <div className={styles.profilePic}>
                             <img src="https://www.3dmodels-textures.com/sitepad-data/uploads/2021/08/2.png" alt="Profile Photo" />
                             <button className={styles.editButton}>Edit</button>
@@ -62,15 +73,18 @@ const Profile = ({ interviewer }) => {
                                 <li><FaExchangeAlt />  <Link to="/profile/changepassword" className={styles.link}>Change Password</Link></li>
                             </ul>
                         </div>
-                    </div>
-                    {/* Right Section */}
-                    <div className={styles.profileRight}>
-                        {/* <MyProfile interviewer={interviewer} /> */}
-                        {/* <ChangePassword /> */}
-                        {/* <PostJobs /> */}
-                        {/* <ManageJobs /> */}
-                        {/* <Outlet/> */}
-                        {/* <Routes>
+                    </div> */}
+
+            {/* Right Section */}
+
+            {/* <div className={styles.profileRight}> */}
+
+            {/* <MyProfile interviewer={interviewer} /> */}
+            {/* <ChangePassword /> */}
+            {/* <PostJobs /> */}
+            {/* <ManageJobs /> */}
+            {/* <Outlet/> */}
+            {/* <Routes>
                             <Route path='changepassword' element={<ChangePassword />} />
                             <Route path='/profile/*' element={<Profile interviewer={interviewer} />} />
                             <Route path='/managejobs' element={<ManageJobs />} />
@@ -78,10 +92,12 @@ const Profile = ({ interviewer }) => {
                             <Route path='/scheduledinterview' element={<ScheduledInterviews />} />
                             <Route path='/' element={<MyProfile />} />
                         </Routes> */}
-                        <Upcoming />
-                    </div>
+            {/* <Upcoming /> */}
+            {/* <Current /> */}
+            {/* </div>
                 </div>
-            </div>
+            </div> */}
+            <ManualInterview />
         </div>
     )
 }
