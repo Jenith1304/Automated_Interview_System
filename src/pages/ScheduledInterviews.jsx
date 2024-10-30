@@ -9,6 +9,8 @@ import Upcoming from './Upcoming';
 
 const ScheduledInterviews = () => {
     return (
+
+        // This page to display the scheduled interview cards for today and future,wil redirect to page Upcoming and Current on particular selection
         <div className={styles.interviewCards}>
             {/* <Link to="/scheduleinterview/upcoming" className={styles.link}> */}
             <div className={styles.cards} >
@@ -34,7 +36,7 @@ const ScheduledInterviews = () => {
                     <p>Shows Interview Which are scheduled</p>
                 </div>
             </div>
-            <div className={styles.cards}>
+            {/* <div className={styles.cards}>
                 <div className={styles.cardsTop}>
                     <h3>Previous</h3>
                     <div className={styles.cardsNumber}>
@@ -45,7 +47,7 @@ const ScheduledInterviews = () => {
                     <p>Shows Interview Which have already been taken</p>
                 </div>
 
-            </div>
+            </div> */}
             {/* <Routes>
                 <Route path='/scheduleinterview/*' element={<ScheduledInterviews />} />
                 <Route path='/upcoming' element={<Upcoming />} />
