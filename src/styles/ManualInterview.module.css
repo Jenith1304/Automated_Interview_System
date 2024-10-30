@@ -1,0 +1,116 @@
+.callContainer {
+
+    height: 750px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    gap: 20px
+}
+
+.callLeft {
+    height: 750px;
+    width: 70%;
+    /* background-color: aqua; */
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.callVideo {
+    height: 80%;
+    width: 100%;
+    background-color: red;
+}
+
+.callControls {
+    height: 8%;
+    width: 100%;
+    /* background-color: yellow; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.callControls button {
+    border-radius: 10px;
+    font-size: 25px;
+    border: none;
+    background-color: lightblue;
+    color: var(--loginbtn);
+    text-align: center;
+}
+
+.callRight {
+    height: 750px;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.chatConvo {
+    /* background-color: green; */
+    /* Your existing background */
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    overflow-y: auto;
+    position: relative;
+    /* Enable vertical scrolling */
+    /* position: absolute; */
+}
+
+.chatConvo_Candidate {
+    position: relative;
+    /* background-color: blue; */
+    padding: 10px;
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chatConvo_Interviewer {
+    position: relative;
+    /* background-color: yellow; */
+    padding: 10px;
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns messages to the right */
+}
+
+.chatMessage {
+    background-color: white;
+    width: auto;
+    /* Adjusted to fit content */
+    max-width: 60%;
+    /* Limits the maximum width */
+    margin-top: 2px;
+    padding: 10px;
+    /* Increased padding for better readability */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: adds depth */
+}
+
+.chatInput {
+
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+
+}
