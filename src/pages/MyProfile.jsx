@@ -30,7 +30,7 @@ const MyProfile = ({ interviewer }) => {
                     <InformationInput label="City" type="text" placeholder="Noida" />
                     <InformationInput label="Postal Code" type="text" placeholder="201301" />
                 </div>
-                <Button text="Save Changes" active="true" />
+                <Button text="Save Changes" active="true" style={{ width: "200px" }} />
             </div>
             <div className={styles.myProfileSocials}>
                 <h2>Social Network</h2>
@@ -43,7 +43,7 @@ const MyProfile = ({ interviewer }) => {
                     <InformationInput label="Github" type="text" placeholder="https://github.com/" />
                     <InformationInput label="Facebook" type="text" placeholder="https://www.facebook.com/" />
                 </div>
-                <Button text="Save Changes" active="true" />
+                <Button text="Save Changes" active="true" style={{ width: "200px" }} />
             </div>
         </>
     );

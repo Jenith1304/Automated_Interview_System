@@ -21,6 +21,9 @@ import Current from './Current';
 
 import InterviewCards from '../components/InterviewCards';
 import ManualInterview from './ManualInterview';
+import AutoInterview from './AutoInterview';
+import Score from './Score';
+import InterviewerDashBoard from './InterviewerDashBoard';
 
 const Profile = ({ interviewer }) => {
 
@@ -37,23 +40,23 @@ const Profile = ({ interviewer }) => {
         }}>
             {/* profileContainer */}
 
-            {/* <div className={styles.profileContainer}> */}
+            <div className={styles.profileContainer}>
 
-            {/* header Section */}
+                {/* header Section */}
 
-            {/* <div className={styles.profileHeader}>
+                <div className={styles.profileHeader}>
                     {interviewer ? <h2>Interviewer Profile</h2> : <h2>Candidate Profile</h2>}
                     <label className={styles.profileHomeLabel}>Home </label>
                     {interviewer ? <label>-  Interviewer Profile</label> : <label>-  Candidate Profile</label>}
-                </div> */}
+                </div>
 
-            {/* profile main section */}
+                {/* profile main section */}
 
-            {/* <div className={styles.profileMain}> */}
+                <div className={styles.profileMain}>
 
-            {/* Left Section */}
+                    {/* Left Section */}
 
-            {/* <div className={styles.profileLeft}>
+                    <div className={styles.profileLeft}>
                         <div className={styles.profilePic}>
                             <img src="https://www.3dmodels-textures.com/sitepad-data/uploads/2021/08/2.png" alt="Profile Photo" />
                             <button className={styles.editButton}>Edit</button>
@@ -73,18 +76,18 @@ const Profile = ({ interviewer }) => {
                                 <li><FaExchangeAlt />  <Link to="/profile/changepassword" className={styles.link}>Change Password</Link></li>
                             </ul>
                         </div>
-                    </div> */}
+                    </div>
 
-            {/* Right Section */}
+                    {/* Right Section */}
 
-            {/* <div className={styles.profileRight}> */}
+                    <div className={styles.profileRight}>
 
-            {/* <MyProfile interviewer={interviewer} /> */}
-            {/* <ChangePassword /> */}
-            {/* <PostJobs /> */}
-            {/* <ManageJobs /> */}
-            {/* <Outlet/> */}
-            {/* <Routes>
+                        {/* <MyProfile interviewer={interviewer} /> */}
+                        {/* <ChangePassword /> */}
+                        {/* <PostJobs /> */}
+                        {/* <ManageJobs /> */}
+                        {/* <Outlet/> */}
+                        {/* <Routes>
                             <Route path='changepassword' element={<ChangePassword />} />
                             <Route path='/profile/*' element={<Profile interviewer={interviewer} />} />
                             <Route path='/managejobs' element={<ManageJobs />} />
@@ -92,12 +95,16 @@ const Profile = ({ interviewer }) => {
                             <Route path='/scheduledinterview' element={<ScheduledInterviews />} />
                             <Route path='/' element={<MyProfile />} />
                         </Routes> */}
-            {/* <Upcoming /> */}
-            {/* <Current /> */}
-            {/* </div>
+                        {/* <ScheduledInterviews /> */}
+                        {/* <Upcoming /> */}
+                        {/* <Current /> */}
+                        <InterviewerDashBoard />
+                    </div>
                 </div>
-            </div> */}
-            <ManualInterview />
+            </div>
+            {/* <ManualInterview /> */}
+            {/* <AutoInterview /> */}
+            {/* <Score /> */}
         </div>
     )
 }
