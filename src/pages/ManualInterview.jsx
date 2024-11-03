@@ -9,13 +9,16 @@ import { IoCallOutline } from "react-icons/io5";
 import InformationInput from '../components/InformationInput';
 const ManualInterview = () => {
     return (
+        // Afte Completion Of interview Interviewer will be redirected to give score to Score.jsx Page
         <div className={styles.callContainer}>
             <div className={styles.callLeft}>
                 <div className={styles.callHeader}>
                     <h2>Defence Research and Development Organisation</h2>
                     <h4>Balasya Mulam Vigyanam</h4>
                 </div>
-                <div className={styles.callVideo}>hello</div>
+                <div className={styles.callVideo}>hello
+                    <div className={styles.receiverVideo}>Hello</div>
+                </div>
                 <div className={styles.callControls}>
                     <button><IoMicOutline /></button>
                     <button><IoMicOffOutline /></button>
