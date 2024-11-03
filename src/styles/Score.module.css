@@ -1,0 +1,41 @@
+.scoreContainer {
+    padding: 50px;
+    z-index: 1;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+    background-color: #F9FCFF;
+    margin-bottom: 15px;
+    width: 100%;
+    /* Ensure full width on smaller screens */
+    max-width: 1000px;
+    /* Limit maximum width for large screens */
+    margin: 0 auto;
+    /* Center the component */
+}
+
+.skill1 {
+    /* background-color: aqua; */
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.commSkill {
+    width: 50%;
+    /* background-color: aqua; */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+}
+
+.commSkill textarea {
+    min-height: 120px;
+    max-height: 120px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F0F6FE;
+    padding: 10px;
+    width: 100%;
+}
